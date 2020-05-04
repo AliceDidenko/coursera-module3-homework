@@ -1,0 +1,69 @@
+*{ box-sizing: border-box;}
+body {
+    margin: 0;
+    width: 100%;
+}
+.container { 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+p {
+    padding: 0 1em 0 1em;
+    margin: 0;
+}
+#heading {
+    font-size: 1.75em;
+    margin: .5em 0 1em 0;
+}
+.name {
+    font-size: 1.25em;
+    margin-bottom: .3em;
+}
+.items {
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(172, 172, 172);
+    margin: 0 2% 2% 2%;
+}
+#header-nav { background-color: tomato; }
+.navbar-brand { padding-left: 2%;}
+.navbar-brand > p { 
+    color: white;
+    padding: 0;
+}
+a { 
+    text-decoration: none;
+    color: white;
+}
+a:hover, a:focus {
+    text-decoration: none;
+    color: white;
+}
+#collapsable-nav { padding: 0;}
+.menu-categories { 
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.menu-categories:hover, .menu-categories:focus {
+    background: rgb(255,99,71);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255,99,71,1), rgba(255, 255, 255, 0.3)); 
+}
+
+/*** large and medium devised ***/
+@media (min-width: 769px) {
+    #collapsable-nav, .menu-categories { display: none;}
+    .navbar-brand > p  { font-size: 2em;}
+}
+
+/*** extra small devised only ***/
+@media (max-width: 768px) {
+    .container { 
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .navbar-toggle { 
+        background-color: rgba(255, 255, 255, 0.5);
+        border: 0;
+    }
+    .navbar-brand > p  { font-size: 1.25em;}
+}
